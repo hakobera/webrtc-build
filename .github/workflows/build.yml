@@ -134,10 +134,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Download ${{ matrix.name }}
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: webrtc.${{ matrix.name }}.tar.gz
-    - uses: actions/download-artifact@v1
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: create-release.env
     - name: Env to output
@@ -166,10 +166,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Download windows
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: webrtc.windows.zip
-    - uses: actions/download-artifact@v1
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: create-release.env
     - name: Env to output
